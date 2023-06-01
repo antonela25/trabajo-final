@@ -1,0 +1,182 @@
+/*atributos generales para el body */ 
+body{
+      margin: 0;
+      box-sizing: border-box;
+      font-family:Georgia, 'Times New Roman', Times, serif;} 
+ 
+
+/*atributos dentro del  header*/
+header{background-color:#fad7d7;}
+
+header .cabecera{ display: flex;
+      flex-direction: column;
+      align-items: center;/*centrar el texto del nav*/
+      justify-content: space-between;/*para que el logo este en una esquina y nav en la otra*/}   
+
+ header img{ margin: 0;
+       width: 180px;
+       padding: 15px 30px;}
+
+header nav{display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom:25px;}    
+   
+nav a{ text-decoration: none;
+      color: #814949;
+      font-weight: bold;
+      padding: 5px 10px;}
+
+a:hover{ color:#ad7e7e ;}  /*sirve para cambiar color cuando pasas el cursor por encima*/
+   
+ul{ display: flex;}
+
+nav ul li{ list-style: none;
+       padding: 60px;}
+/**fin del header*/
+/*atributos para el main*/
+main{ background-color: #f5eeee;
+      text-align: center;
+      align-items: center;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      min-height: 100vh;
+      justify-content: center;}
+
+/* section1 linkk de contacto a whatsapp y messenger*/
+main  h2{ text-align: center;
+      font-weight: bold;
+      color: #915858;
+      padding-top: 40px;}
+
+.contactos a img{ width:70px ;
+      align-items: center;
+      padding-bottom: 50px;}
+
+.contactos a img:hover{ background-color: #eba3a3a1;
+      box-shadow: 0 0 20px rgba(202, 158, 158, 0.575);
+      border-radius: 30px;}           
+
+/*section2 formulario de contacto*/
+form{ padding: 50px 55px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);/*para darle sombra*/
+      border-radius: 30px;/*para redondear los bordes*/
+      text-align: center;}  
+
+ main .formulario{ font-family: Georgia, 'Times New Roman', Times, serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;} 
+
+.formulario h2{ color: #915858;
+      font-size: 35px;}    
+
+.contacto-pedido{ display: flex;
+      flex-direction: column;
+      text-align: left;}
+
+label{ color:#915858;
+      font-size:18px;
+      margin-bottom:15px;}  
+    
+input, textarea{ padding: 20px 25px;
+      border-radius: 25px;
+      margin-bottom: 20px;
+      background-color: #f5eeee;
+      border: 3px solid #fad7d7;
+      color: #915858;
+      outline: none;/*para que no aparezca el borde cuando ingresa la informacion*/}    
+
+input::placeholder, textarea::placeholder{ color: #915858;}     
+
+ textarea{ padding-bottom: 40px;}
+
+ .contacto-pedido .btn{  padding-top: 30px;
+      font-size:15px ;
+      color: #915858;
+      background-color: #f5eeee;
+      border: 3px solid #fad7d7;
+      border-radius: 25px;
+      margin-bottom: 15px;}
+
+.btn:hover{ background-color: #d48888a1;
+       box-shadow: 0 0 20px rgba(190, 107, 107, 0.4);}
+
+/*section3 calculador costo de envio */
+.calcular{ padding-top: 40px;}
+
+.calcular form{ padding: 50px 55px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);/*para darle sombra*/
+      border-radius: 30px;/*para redondear los bordes*/
+      text-align: center;}  
+
+.calcular label{ text-align: center;}
+
+.costo-envio{ text-align: center;
+      font-size: 35;}
+/*inicio section3 y 1/2 archivo para descargar*/
+.descarga{ margin-top: 20px;
+      margin: 20px;
+      border: 3px solid #571368;
+      border-radius: 20px}
+
+.descarga h4{ color: #4d215f;
+      font-size: 22px;}
+
+.descarga a{ color: #541c6e;
+      font-size: 18px;} 
+
+.descarga a:hover{ color:#9f71a7 ;}    
+    
+ /*section4 redes sociales*/
+.seguinos a img{  width:70px;
+      align-items: center;
+      padding-bottom: 50px;}
+
+ .seguinos a img:hover{ background-color: #eba3a3a1;
+      box-shadow: 0 0 20px rgba(202, 158, 158, 0.575);
+      border-radius: 30px;}  
+               
+/*atributos para el footer*/
+.footer{ background-color:#fad7d7;
+      display: flex;
+      padding: 80px 0;}
+
+.footer-container{ max-width: 1200px;
+      margin: 0 auto;}
+
+.footer-row{ display: flex;
+      flex-wrap: wrap;}/*para que no se pongan en columna cuando pase el ancho*/
+    
+.footer-links{ width: 30%;
+      padding: 5px 120px;}
+
+.footer-links h3{ font-size: 18px;
+      color: #915858;
+      margin-bottom: 25px;
+      font-weight: 500;
+      border-bottom: 2px solid #814949;
+      padding-bottom: 10px;
+      display: inline-block;}  
+     
+.footer-links a{ font-size: 16px;
+      text-decoration: none;
+      color: #814949;
+      display: block;
+      margin-bottom:15px;
+      transition: all .3s ease;}
+
+.footer-links a:hover{ color: #eee3e3;
+      padding-left: 6px;}     
+
+.social-link a{ display: block;
+      color: #814949;
+      width: 40px;
+      min-height: 40px;
+      background-color:rgba(255, 255, 255, 0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50px;
+     transition: all.5s ease;}
+     
+.copy{color: #814949;}

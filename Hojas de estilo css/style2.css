@@ -1,0 +1,135 @@
+/*atributos generales para el body */ 
+body{
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;} 
+   
+/*atributos dentro del  header*/
+header{background-color:#fad7d7;}
+
+header .cabecera{ display: flex;
+      flex-direction: column;
+      align-items: center;/*centrar el texto del nav*/
+      justify-content: space-between;/*para que el logo este en una esquina y nav en la otra*/}   
+
+ header img{ margin: 0;
+      width: 180px;
+      padding: 15px 30px;}
+
+header nav{ display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom:25px;}    
+   
+nav a{ text-decoration: none;
+      color: #814949;
+      font-weight: bold;
+      padding: 5px 10px;}
+
+a:hover{ color:#ad7e7e ;}  /*sirve para cambiar color cuando pasas el cursor por encima*/
+   
+ul{ display: flex;}
+
+nav ul li{ list-style: none;
+       padding: 60px;}
+
+  /*atributos para el main*/
+main{ margin: 0;
+      padding: 0;
+      box-sizing: border-box;/*para tener control de las cajas*/
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      font-family:serif, sans-serif, monospace;} 
+
+main h2{ font-size: 35px;
+      color: #915858;
+      text-align: center;}      
+
+.container{ width: 100%;
+      display: flex;
+      max-width: 1100px;} 
+      
+.card{ width: 100%;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+       background-color: #fff;
+      box-shadow: 0px 1px 10px rgba(0,0,0,0,2);}
+
+.card:hover{ background-color: #d48888a1;
+      box-shadow: 0 0 20px rgba(190, 107, 107, 0.4);
+      transform: translateY(-3%);}
+
+.card img{ width: 100%;
+      height:250px;}
+
+.card .contenido{ padding:15px;
+      text-align: center;}     
+
+.card .contenido h3{ font-weight: bold;
+      font-size: 22PX;
+      color: #915858;
+      margin-bottom: 15PX;}
+
+.card .contenido p{ color: #7e3c3c;
+      font-size: 18PX;}
+     
+
+/*section 3 video de salsa*/
+.section-video{
+     display: flex;
+     flex-direction: column;
+     background-color: #f3e6e6;}
+
+.video{  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 15px;}
+     
+/*atributos para el footer*/
+.footer{ background-color:#fad7d7;
+      display: flex;
+      padding: 80px 0;}
+
+.footer-container{ max-width: 1200px;
+       margin: 0 auto;}
+
+.footer-row{ display: flex;
+      flex-wrap: wrap;}/*para que no se pongan en columna cuando pase el ancho*/
+    
+.footer-links{ width: 30%;
+      padding: 5px 120px;}
+
+.footer-links h3{ font-size: 18px;
+      color: #915858;
+      margin-bottom: 25px;
+      font-weight: 500;
+      border-bottom: 2px solid #814949;
+      padding-bottom: 10px;
+      display: inline-block;}  
+     
+.footer-links a{ font-size: 16px;
+      text-decoration: none;
+      color: #814949;
+      display: block;
+      margin-bottom:15px;
+      transition: all .3s ease;}
+
+.footer-links a:hover{ color: #eee3e3;
+      padding-left: 6px;}     
+
+.social-link a{ 
+      display: block;
+      color: #814949;
+      width: 40px;
+      min-height: 40px;
+      background-color:rgba(255, 255, 255, 0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50px;
+     transition: all.5s ease;}
+     
+.copy{color: #814949;}

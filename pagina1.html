@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="./Hojas de estilo css/style1.css">
+  <!--link de bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<!--libreria de font-awesome(para iconos)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comidaconsabor-1</title>
+</head>
+<body>
+  <!--inicio del encabezado-->
+  <header>
+    <div class="cabecera">
+          <img src="./imagenes/logo/LOGO ANTO.png">
+        <nav>
+         <ul>
+         <li><a href="index.html">Inicio</a></li>
+         <li><a href="pagina1.html"target="_blank">Contacto</a></li>
+         <li><a href="pagina2.html"target="_blank">Productos</a></li>
+         </ul>
+        </nav>
+       </div> 
+   </header>
+
+   <main><!--inicio del main-->
+<!--inicio section1 medios para contactarnos-->
+      <section class="atencion">
+         <h2>PARA ATENCIÓN PERSONALIZADA CONTACTANOS POR:</h2> 
+           <div class="contactos">
+             <a href="https://wa.me/5493364249834"><img src="./imagenes/iconos/whatsapp-fill.svg" ></a>
+             <a href="https://m.me/100065412762309"><img src="imagenes/iconos/messenger-fill (1).svg"></a>
+           </div>
+      </section>
+ <!--inicio section2 formulario de pedido-->
+      <section class="formulario">
+       <form action="">
+          <h2>DEJANOS TU PEDIDO</h2>
+              <div class="contacto-pedido">
+                  <label for="name">Nombre:</label>
+                  <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+                  <label for="phone">Telefono: </label>
+                  <input type="tel" name="phone" id="phone" placeholder="Ingrese su telefono">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="Ingrese su correo electronico">
+                  <label for="message">Pedido:</label>
+                  <textarea name="message" id="massage"  cols="35" cols="5" placeholder="Ingrese su pedido"></textarea>
+                  <br> <br>
+                  <input class="btn" type="submit" value="Enviar">
+                  <input class="btn" type="submit" value="salir de la pagina" onclick="cerrarse()" >
+
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5500/pagina1.html">
+                  <input type="hidden" name="_catchap" value="false">
+              </div>
+        </form>
+      </section>
+  <!--inicio section3 funcion java script para calcular envio-->
+      <section class="calcular">
+        <form> 
+            <h2>ENVIOS DISPONIBLES PARA SAN NICOLÁS, ROSARIO, PERGAMINO Y RAMALLO.</h2>
+            <div class="contacto-pedido">
+            <label>ubicación del cliente</label>
+           <input type="text" id="ubicacion" name="ubicacion" required placeholder="Ingresa tu ciudad para conocer el costo de envio">
+            <br><br>
+            <input type="button" value="calcular Envio" onclick="calcularEnvio()">
+           </form>
+            <h2>costo de envio</h2>
+            <div id="costo-envio"></div> 
+            </div>
+      </section> 
+      <!--inicio section3 y 1/2 archivo para descargar-->  
+       <section class="descarga">
+        <h4>Si el valor de tu pedido es superior a $3000 te invitamos a descargar un cupón de descuento para utilizar en tu próxima compra.</h4>
+       <a href="./imagenes/logo/Publicación1.pub" download="cupón de descuento">descarga tu cupón</a>
+      </section>
+<!--inicio section4 redes sociales-->
+       <section class="atencion">
+        <h2>SEGUINOS  EN NUESTRAS REDES SOCIALES Y ENTERATE TODAS LAS PROMOS SEMANALES</h2>
+           <div class="seguinos">
+             <a href="https://instagram.com/comida.consabor?igshid=MzRlODBiNWFlZA=="><img src="./imagenes/iconos/instagram-fill (1).svg"></a>
+             <a href="https://www.facebook.com/profile.php?id=100065412762309"><img src="./imagenes/iconos/facebook-circle-fill (1).svg"></a>
+           </div>
+      </section>
+</main>
+ <!--inicio del pie de pagina -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-links">
+        <h3>navegación</h3>
+         <a href="index.html">Inicio</a>
+         <a href="pagina1.html">Contacto</a>
+         <a href="pagina2.html">Productos</a>
+       </ul>
+      </div>
+     <div class="footer-links">  
+        <h3>seguinos</h3>
+        <div class="social-link">
+        <a href="https://www.facebook.com/profile.php?id=100065412762309"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/comida.consabor?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+     <div class="footer-links">
+      <p class="copy">&copy; Antonela Troncoso</p>
+     </div>
+  </div>
+</div>
+</footer>
+<!--script de mis archivos-->
+<script src="./javascript/script1.js"></script>
+</body>
+</html>
